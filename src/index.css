@@ -1,15 +1,62 @@
+:root {
+  background-color: #05292e;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body{
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "roboto";
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  
+}
 
 
+.image3 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: absolute;
+  width: 90rem;
+  height: 20rem;
+  margin: 0 auto;
+  background: url(../src/assets/image3.png);
+}
+
+.image2 {
+  position: absolute;
+  width: 454px;
+  height: 176px;
+  left: 493px;
+  top: 48px;
+  background: url(../src/assets/image2.png);
+}
+
+.infobanner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 890px;
+  height: 126px;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 2rem;
 
 
+  background: #062226;
+}
 
-
-
-
-
-
-
-
+table{
+  border-collapse: separate;
+  border-spacing: 8vw 5px;
+}
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

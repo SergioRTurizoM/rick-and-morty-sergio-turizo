@@ -28,20 +28,30 @@ function App() {
       <div className="App">
         <div className="mainHeader">
           <h1>Rick & Morty Location</h1>
-          <h2>Location: {location?.name}</h2>
-          <label for="">Please, insert a number from 1 to 126</label>
-          <input
-            type="text"
-            value={typeId}
-            onChange={(e) => setTypeId(e.target.value)}
-          />
-          <button onClick={searchType}>Search</button>
 
-          <p>
-            <b>Number of residents: </b>
-            {location.residents?.length}
-          </p>
-       
+          <div class="inputBox">
+          <label for="">Please, insert a number from 1 to 126</label>
+          <input type="text" value={typeId} onChange={(e) => setTypeId(e.target.value)}/>
+          <button onClick={searchType}>Search</button>
+          </div>
+
+          <div class="infobanner">
+            <table>
+            <tr>
+              <th>Location</th>
+              <th>Type</th>
+              <th>Dimension</th>
+              <th>Population</th>
+            </tr>
+            <tr>
+              <td>{location?.name}</td>
+              <td>{location?.type}</td>
+              <td>{location.dimension}</td>
+              <td>{location.residents?.length}</td>
+            </tr>
+            </table>
+          </div>
+          <h2>Residents</h2>
         </div>
         <div className="characterContainer">
       
