@@ -27,12 +27,10 @@ function App() {
     <>
       <div className="App">
         <div className="mainHeader">
-          <h1>Rick & Morty Location</h1>
-
           <div class="inputBox">
-          <label for="">Please, insert a number from 1 to 126</label>
-          <input type="text" value={typeId} onChange={(e) => setTypeId(e.target.value)}/>
-          <button onClick={searchType}>Search</button>
+            <label for="">Please, insert a number from 1 to 126:  </label> <br/>
+            <input type="text" value={typeId} onChange={(e) => setTypeId(e.target.value)}/>
+            <button onClick={searchType}>Search</button>
           </div>
 
           <div class="infobanner">
