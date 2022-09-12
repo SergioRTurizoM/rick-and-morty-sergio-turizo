@@ -49,11 +49,14 @@ align-items: center;
   justify-content: space-around;
   gap: 2rem;
   background: #062226;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
 }
 
 table{
   border-collapse: separate;
-  border-spacing: 8vw 5px;
+  border-spacing: 8vw 0.3vw;
 }
 
+th{
+  width: 30rem;
+}
